@@ -35,7 +35,8 @@ header {
   background-image: url('download.jpg');
   background-size: cover;
   background-position: fixed;
-  color: white;
+  color: black;
+  font-weight: 900;
 }
 
 header section {
@@ -48,15 +49,24 @@ header img {
   max-width: 150px;
 }
 
+
 h1 {
+  text-transform: uppercase;
+  margin: 1em 0;
+  color: white;
+  font-weight: bolder;
+}
+h2 {
   text-transform: uppercase;
   margin: 1em 0;
   color: black;
   font-weight: bolder;
+
 }
 
 h3 {
   text-transform: uppercase;
+  color: #1C9C94;
 }
 
 h3, h4 {
@@ -95,21 +105,12 @@ a .fab {
 }
 
 .course .title {
-  color: #509e98;
+  color: #000000;
   -ms-flex: 0 0 33.3%;
   flex: 0 0 33.3%;
   max-width: 33%;
 }
 
-.course .descrition {
-  -ms-flex: 0 0 66.6%;
-  flex: 0 0 66.6%;
-  max-width: 66.6%;
-}
-
-.course .descrition p {
-  padding-left: 1em;
-}
 
 .skills .column {
   -ms-flex: 0 0 50%%;
@@ -142,33 +143,43 @@ ul.job-description li:before{
   color: #509e98;
 }
 
-footer {
- padding: 1em 1.5em;
- background: #A7B8BF;
- color: white;
- text-align: right;
+contactInfo{
+  padding-top: 10px;
+  border-bottom: 1px solid rgb(92, 92, 91);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
-
-@media only screen and (max-width: 768px) {
-  .course {
-    display: block;
-  }
-
-  .course .title, .course .descrition {
-    max-width: 100%;
-  }
+.title{
+  color:#1C9C94;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
-
-@media only screen and (max-width: 576px) {
-  .skills {
-    display: block;
-  }
-
-  .skills .column {
-    max-width: 100%;
-  }
-
-  footer {
-    text-align: center;
-  }
+.contactInfo ul{
+  position:relative;
+  list-style: none ;
 }
+.contactInfo ul li{
+  list-style: none;
+  position: relative;
+  margin: 10px o;
+  cursor:pointer;
+}
+.contactInfo ul li .icon{
+  list-style: none;
+  display: inline-block;
+  width:30px;
+  font-size: 18px;
+  color: rgb(92, 92, 91);
+}
+.contactInfo ul li span{
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-size: 10px;
+}
+.year{
+  background-color: #c4caca;
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
